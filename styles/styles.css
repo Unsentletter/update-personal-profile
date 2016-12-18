@@ -13,8 +13,17 @@
 
 .right-column {
   width: 50%;
-  flex-direction: row;
+  /*flex-direction: row;*/
   background-color: #f4f4f4;
+}
+.left-column {
+  width: 50%;
+  /*flex-direction: row;*/
+  background-image: url(imgs/me.png);
+  background-size: contain;
+  overflow: hidden;
+  margin-top: 5px;
+  background-repeat: no-repeat;
 }
 
 .title {
@@ -33,23 +42,6 @@ h1 {
   font-size: 40px;
 }
 
-.left-column {
-  width: 50%;
-  flex-direction: row;
-  background-image: url(imgs/me.png);
-  background-size: contain;
-  overflow: hidden;
-  margin-top: 5px;
-  background-repeat: no-repeat;
-}
-
-.link-photo {
-  width: 100%;
-  margin: 0;
-  overflow: hidden;
-  background-color: #000;
-}
-
 .portfolio {
   background-color: #e8e8e8;
 }
@@ -58,11 +50,32 @@ h1 {
   height: 150px;
 }
 
-.heading-text {
+.heading-text p{
   line-height: 150px;
   text-align: center;
-  width: 90vw;
-  font-size: 90px;
+  font-size: 70px;
+}
+
+.portfolio-columns {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+.portfolio-left {
+  width: 50%;
+}
+.portfolio-right {
+  width: 50%;
+}
+.link-photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.heading-paragraph p {
+  padding: 10px;
 }
 
 img {
